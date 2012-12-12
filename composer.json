@@ -2,7 +2,7 @@
     "name": "rybak-vlm/se-iterator",
     "type": "library",
     "description": "Iterator throw results of common search engines",
-    "keywords": [""],
+    "keywords": [],
     "homepage": "https://github.com/rybak-vlm/se-iterator",
     "license": "MIT",
     "authors": [
