@@ -17,6 +17,6 @@
         "symfony/dom-crawler": "2.2.x-dev"
     },
     "autoload": {
-        "psr-0": {"VR\\Search": ""}
+        "psr-0": {"rybak-vlm\\Search": ""}
     }
 }
