@@ -1,4 +1,18 @@
 {
+    "name": "rybak-vlm/se-iterator",
+    "type": "library",
+    "description": "Iterator throw results of common search engines",
+    "keywords": ["Iterator, Google"],
+    "homepage": "https://github.com/rybak-vlm/se-iterator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitali Rybak",
+            "email": "rybak_vlm@tut.by",
+            "homepage": "",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "symfony/css-selector": "2.2.x-dev",
         "symfony/dom-crawler": "2.2.x-dev"
