@@ -14,7 +14,6 @@
         }
     ],
     "require": {
-        "symfony/css-selector": "v2.1.4",
         "symfony/dom-crawler": "2.2.x-dev"
     },
     "autoload": {
