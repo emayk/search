@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "symfony/dom-crawler": "2.2.x-dev"
+        "symfony/dom-crawler": "2.1.*@dev"
     },
     "autoload": {
         "psr-0": {"rybak-vlm\\Search": ""}
