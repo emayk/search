@@ -1,8 +1,8 @@
 <?php
 
-namespace VR\Search\Tests\Engine;
+namespace Virm\Search\Tests\Engine;
 
-use VR\Search\Engine\GoogleEngine;
+use Virm\Search\Engine\GoogleEngine;
 
 class GoogleEngineTest extends \PHPUnit_Framework_TestCase
 {
@@ -42,7 +42,7 @@ class GoogleEngineTest extends \PHPUnit_Framework_TestCase
         $dom = new \DOMDocument('1.0', 'utf-8');
         $dom->loadHTML(sprintf($nodeHTML, $link, $title, $description));
 
-        $resultRow = new \VR\Search\Engine\EngineResultRow();
+        $resultRow = new \Virm\Search\Engine\EngineResultRow();
         $resultRow->setTitle(strip_tags($title));
         $resultRow->setLink($googleEngine->getDomain() . $link);
         $resultRow->setDescription(strip_tags($description));

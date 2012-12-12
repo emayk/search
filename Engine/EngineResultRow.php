@@ -1,6 +1,6 @@
 <?php
 
-namespace VR\Search\Engine;
+namespace Virm\Search\Engine;
 
 class EngineResultRow
 {

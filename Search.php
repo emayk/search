@@ -1,14 +1,14 @@
 <?php
 
-namespace VR\Search;
+namespace Virm\Search;
 
-use VR\Search\Engine\EngineInterface;
+use Virm\Search\Engine\EngineInterface;
 
 class Search implements \Iterator, \ArrayAccess
 {
     protected $limit = null;
     /**
-     * @var \VR\Search\Engine\EngineInterface
+     * @var \Virm\Search\Engine\EngineInterface
      */
     protected $engine = null;
 

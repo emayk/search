@@ -1,9 +1,9 @@
 <?php
 
-namespace VR\Search\Tests;
+namespace Virm\Search\Tests;
 
-use VR\Search\Search;
-use VR\Search\Engine\GoogleEngine;
+use Virm\Search\Search;
+use Virm\Search\Engine\GoogleEngine;
 
 class SearchTest extends \PHPUnit_Framework_TestCase
 {
@@ -20,7 +20,7 @@ class SearchTest extends \PHPUnit_Framework_TestCase
         $googleEngine = new GoogleEngine('phpunit brutal ololo');
         $search = new Search($googleEngine);
 
-        $resultRow = new \VR\Search\Engine\EngineResultRow();
+        $resultRow = new \Virm\Search\Engine\EngineResultRow();
         $resultRow->setTitle('[00:00:47] <gerrit-wm> New review: jenkins-bot; "Build Failed ...');
         $resultRow->setLink('http://bots.wmflabs.org/~wm-bot/logs/%2523mediawiki/20120528.txt');
         $resultRow->setDescription('28 May 2012... <MaxSem> ololo [13:18:58] <Reedy> I\'m planning on branching and making   up .... [15:03:54] <chughakshay16> Reedy: i m running a phpunit test. ...... I don\'t   even need a clean way, i jus want to put some brutal code in this ...');

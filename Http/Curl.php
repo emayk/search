@@ -1,6 +1,6 @@
 <?php
 
-namespace VR\Search\Http;
+namespace Virm\Search\Http;
 
 class Curl
 {

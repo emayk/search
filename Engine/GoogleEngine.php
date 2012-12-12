@@ -1,9 +1,9 @@
 <?php
 
-namespace VR\Search\Engine;
+namespace Virm\Search\Engine;
 
-use VR\Search\Http\Curl;
-use VR\Search\Engine\EngineResultRow;
+use Virm\Search\Http\Curl;
+use Virm\Search\Engine\EngineResultRow;
 use Symfony\Component\DomCrawler\Crawler;
 
 class GoogleEngine implements EngineInterface

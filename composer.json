@@ -1,9 +1,9 @@
 {
-    "name": "rybak-vlm/se-iterator",
+    "name": "virm/search",
     "type": "library",
-    "description": "Iterator throw results of common search engines",
+    "description": "Grants useful access way for search results from search engines like Google",
     "keywords": [],
-    "homepage": "https://github.com/rybak-vlm/se-iterator",
+    "homepage": "https://github.com/virm/search",
     "license": "MIT",
     "authors": [
         {
@@ -18,6 +18,6 @@
         "symfony/css-selector": "2.2.*@dev"
     },
     "autoload": {
-        "psr-0": {"Vlm\\Search": ""}
+        "psr-0": {"Virm\\Search": ""}
     }
 }

@@ -1,15 +1,19 @@
 <?php
 
-namespace VR\Search\Engine;
+namespace Virm\Search\Engine;
 
 interface EngineInterface
 {
     /**
      * @abstract
-     * @param $i
+     * @param $start
      * @return EngineResultRow[]
      */
     public function getResultSet($start);
 
+    /**
+     * @abstract
+     * @return int
+     */
     public function getCount();
 }
