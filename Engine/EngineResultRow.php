@@ -39,4 +39,9 @@ class EngineResultRow
     {
         return $this->description;
     }
+
+    public function __toString()
+    {
+        return $this->title;
+    }
 }
