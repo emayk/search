@@ -1,22 +1,51 @@
 Search results iterator
 =====================
 
-equivalents:
-
-    use Symfony\Component\CssSelector\CssSelector;
-
-    print CssSelector::toXPath('div.item > h4 > a');
-
-Resources
+install:
 ---------
+    By Composer:
 
-This component is a port of the Python lxml library, which is copyright Infrae
-and distributed under the BSD license.
+    Install composer http://getcomposer.org to your project root;
 
-Current code is a port of https://github.com/SimonSapin/cssselect@fd2e70
+    create composer.json and add something like following:
+    {
+        "require": {
+            "virm/search": "dev-master"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*"
+        },
+        "autoload": {
+            "psr-0": {"Virm\\Search": ""}
+        }
+    }
 
-You can run the unit tests with the following command:
+    run:
+        php composer.phar install
+        php composer.phar update
+    for installing dependencies. (symfony dom_crawler, css_selector components)
 
-    $ cd path/to/Symfony/Component/CssSelector/
-    $ composer.phar install --dev
-    $ phpunit
+
+Usage:
+---------
+    <?php
+        header('Content-Type: text/html; charset=utf-8');
+        require_once 'vendor/autoload.php';
+
+        use Virm\Search\Search;
+        use Virm\Search\Engine\GoogleEngine;
+
+        $engine = new GoogleEngine('phpunit brutal');
+        $search = new Search($engine, 250);
+
+        echo $engine->getCount();
+
+        foreach($search as $k => $result) {
+            echo $result->getTitle();
+            echo $result->getDescription();
+            echo $result->getLink();
+        }
+
+        echo $search[23];
+    ?>
+
