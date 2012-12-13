@@ -20,5 +20,5 @@
     "autoload": {
         "psr-0": {"Virm\\Search": ""}
     },
-    "target-dir": ""
+    "target-dir": "Virm\\Search"
 }
