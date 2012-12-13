@@ -18,7 +18,7 @@
         "symfony/css-selector": "v2.1.4"
     },
     "autoload": {
-        "psr-0": {"Virm\\Search": ""}
+        "psr-0": {"": ""}
     },
     "target-dir": ""
 }
